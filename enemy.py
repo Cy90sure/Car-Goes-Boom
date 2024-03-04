@@ -1,6 +1,7 @@
 import pygame.sprite
 from constants import *
 
+
 class Enemy(pygame.sprite.Sprite):
     def __init__(self, position, image, speed):
         super().__init__()
