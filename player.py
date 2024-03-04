@@ -12,11 +12,11 @@ class Player:
     def border(self):
         if self.rect.top < 0:
             self.rect.top = 0
-        elif self.rect.bottom > HEIGHT:
+        if self.rect.bottom > HEIGHT:
             self.rect.bottom = HEIGHT
-        elif self.rect.left < 0:
+        if self.rect.left < 0:
             self.rect.left = 0
-        elif self.rect.right > WIDTH:
+        if self.rect.right > WIDTH:
             self.rect.right = WIDTH
 
     def move(self):
