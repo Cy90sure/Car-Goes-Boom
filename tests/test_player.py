@@ -1,5 +1,5 @@
 from enemy import Enemy
-from constants import HEIGHT, WIDTH, ACCELERATION
+from constants import HEIGHT, WIDTH
 from player import Player
 import pygame
 import pytest

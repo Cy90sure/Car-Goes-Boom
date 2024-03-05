@@ -1,12 +1,12 @@
 import pygame
 import os
 import sys
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from constants import ACCELERATION
 from enemy import Enemy
+
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 image = pygame.Surface((50, 50)) 
-
-
 pygame.init()
 
 def test_enemy_creation():
@@ -16,11 +16,13 @@ def test_enemy_creation():
     assert enemy.speed == 5
     assert enemy.passed == False
 
+
 def test_remove():
     enemy = Enemy((1000, 300), image, 5)
     enemy.rect.left = -231
     enemy.remove()
     assert not pygame.sprite.spritecollide(enemy, pygame.sprite.Group(), dokill=False)
+
 
 def test_update():
     enemy = Enemy((1000, 300), image, 5)
@@ -29,3 +31,4 @@ def test_update():
     enemy.update()
     assert enemy.speed == speed
     assert enemy.rect.x == x
+    
