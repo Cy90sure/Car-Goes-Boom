@@ -1,2 +1,4 @@
 pygame==2.5.2
 pytest==8.1.0
+pytest-html
+flake8-html
