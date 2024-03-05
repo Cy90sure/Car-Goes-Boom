@@ -6,6 +6,7 @@ from constants import ACCELERATION
 from enemy import Enemy
 image = pygame.Surface((50, 50)) 
 
+
 pygame.init()
 
 def test_enemy_creation():

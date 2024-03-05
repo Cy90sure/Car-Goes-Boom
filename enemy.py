@@ -1,5 +1,5 @@
 import pygame.sprite
-from constants import *
+from constants import ACCELERATION
 
 
 class Enemy(pygame.sprite.Sprite):

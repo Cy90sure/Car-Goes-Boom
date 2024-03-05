@@ -2,7 +2,9 @@ import pygame
 import sys
 import random
 from constants import HEIGHT, WIDTH, ACCELERATION
-from load_images import *
+from load_images import start_image, pause_image, gameover_image
+from load_images import road_image, car_player_image, car_enemy_images
+from load_images import space_image, ufo_player_image, meteor_enemy_images
 from player import Player
 from road import Road
 from enemy import Enemy
