@@ -1,5 +1,6 @@
 import pygame.sprite
 
+
 class Road(pygame.sprite.Sprite):
     def __init__(self, image, position):
         super().__init__()
