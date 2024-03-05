@@ -1,11 +1,11 @@
 import pygame
 import sys
 import random
-from constants import *
+from constants import HEIGHT, WIDTH, ACCELERATION
 from load_images import *
-from player import *
-from road import *
-from enemy import *
+from player import Player
+from road import Road
+from enemy import Enemy
 
 pygame.init()
 pygame.font.init()

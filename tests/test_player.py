@@ -1,6 +1,6 @@
-from enemy import *
-from constants import *
-from player import *
+from enemy import Enemy
+from constants import HEIGHT, WIDTH, ACCELERATION
+from player import Player
 import pygame
 import pytest
 import os
