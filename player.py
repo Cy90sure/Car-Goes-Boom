@@ -1,6 +1,5 @@
 import pygame
-from constants import *
-
+from constants import HEIGHT, WIDTH, ACCELERATION
 
 class Player:
     def __init__(self, position, image, speed):
