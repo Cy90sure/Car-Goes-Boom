@@ -12,7 +12,7 @@ pygame.init()
 
 
 def test_enemy_creation():
-    enemy = Enemy((1000, 300), image, 5)   
+    enemy = Enemy((1000, 300), image, 5)
     assert enemy.image == image
     assert enemy.rect.center == (1000, 300)
     assert enemy.speed == 5
