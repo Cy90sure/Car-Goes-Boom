@@ -20,8 +20,7 @@ def test_enemy_creation():
 
 
 def test_remove():
-    enemy = Enemy((1000, 300), image, 5)
-    enemy.rect.left = -231
+    enemy = Enemy((-300, 300), image, 5)
     enemy.remove()
     assert not pygame.sprite.spritecollide(enemy,
                                            pygame.sprite.Group(), dokill=False)
